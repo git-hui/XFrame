@@ -1,6 +1,5 @@
 package com.youth.xframe.base;
 
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -18,8 +17,8 @@ public abstract class XActivity extends AppCompatActivity implements ICallback {
         if (getLayoutId()>0) {
             setContentView(getLayoutId());
         }
-        initData(savedInstanceState);
         initView();
+        initData(savedInstanceState);
     }
 
     /**
